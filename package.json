@@ -1,0 +1,26 @@
+{
+    "name": "language-zephir",
+    "displayName": "language-zephir",
+    "description": "language support for zephir",
+    "version": "0.1.0",
+    "publisher": "AImager",
+    "engines": {
+        "vscode": "^1.15.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "zephir",
+            "aliases": ["Zephir", "zephir"],
+            "extensions": [".zep"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "zephir",
+            "scopeName": "source.php.zephir",
+            "path": "./syntaxes/Zephir.tmLanguage"
+        }]
+    }
+}
